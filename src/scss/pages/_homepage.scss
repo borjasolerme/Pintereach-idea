@@ -14,7 +14,7 @@ header {
   }
   .main-nav {
     display: flex;
-    margin-top: 20px;
+    margin-top: 10px;
     li {
       list-style: none;
     }
@@ -35,5 +35,35 @@ header {
     li:last-child {
       margin-left: auto;
     }
+  }
+}
+
+.devices ul {
+  margin: 0;
+  padding: 20px 0;
+  background: rgb(212, 212, 212);
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  @media only screen and (max-width: 550px) {
+    grid-template-columns: reapeat(2, auto);
+  }
+  li {
+    list-style: none;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.features {
+  background: purple;
+  text-align: center;
+  h2 {
+    margin: 5% 0;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 30px;
   }
 }
