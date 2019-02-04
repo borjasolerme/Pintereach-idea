@@ -1,0 +1,24 @@
+.main-nav {
+  display: flex;
+  margin-top: 20px;
+  li {
+    list-style: none;
+  }
+  li:first-child {
+    margin-right: auto;
+  }
+  a {
+    color: black;
+    display: block;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+  .cta {
+    border: 3px solid purple;
+  }
+  li:last-child {
+    margin-left: auto;
+  }
+}
