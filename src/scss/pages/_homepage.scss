@@ -1,0 +1,69 @@
+header {
+  text-align: center;
+  article {
+    width: 80%;
+    margin: 10px auto;
+  }
+  h1 {
+    margin-bottom: 0.5%;
+  }
+  img {
+    max-width: 500px;
+    width: 100%;
+    margin-top: 4%;
+  }
+  .main-nav {
+    display: flex;
+    margin-top: 10px;
+    li {
+      list-style: none;
+    }
+    li:first-child {
+      margin-right: auto;
+    }
+    a {
+      color: black;
+      display: block;
+      padding: 15px 30px;
+      text-decoration: none;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+    .cta {
+      border: 3px solid purple;
+    }
+    li:last-child {
+      margin-left: auto;
+    }
+  }
+}
+
+.devices ul {
+  margin: 0;
+  padding: 20px 0;
+  background: rgb(212, 212, 212);
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  @media only screen and (max-width: 550px) {
+    grid-template-columns: reapeat(2, auto);
+  }
+  li {
+    list-style: none;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.features {
+  background: purple;
+  text-align: center;
+  h2 {
+    margin: 5% 0;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 30px;
+  }
+}
