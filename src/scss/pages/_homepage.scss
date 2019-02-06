@@ -32,6 +32,7 @@ header {
     margin-top: 10px;
     li {
       list-style: none;
+      display: inline-block;
     }
     li:first-child {
       margin-right: auto;
@@ -45,11 +46,54 @@ header {
       text-transform: uppercase;
     }
     .cta {
-      border: 3px solid purple;
+      background: #6c63ff;
+      color: white;
+      box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.2);
+      margin-left: 15px;
+      border-radius: 12px;
     }
-    li:last-child {
-      margin-left: auto;
+  }
+  //* Responsive Nav Styles
+  .responsive-nav {
+    @media screen and (max-width: 750px) {
+      display: none;
     }
+  }
+
+  .unfold {
+    display: block;
+    width: 100%;
+    background: #6c63ff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    li {
+      display: block;
+    }
+    a {
+      padding: 40px;
+      display: block;
+      text-align: center;
+    }
+    a:hover {
+      transform: translate(0);
+      color: white;
+    }
+    a.cta {
+      background: inherit;
+      color: white;
+      margin-left: 0;
+    }
+  }
+}
+
+header li.nav-toggle {
+  display: none;
+  @media screen and (max-width: 750px) {
+    display: block;
+    width: 120px;
+    z-index: 3;
   }
 }
 
