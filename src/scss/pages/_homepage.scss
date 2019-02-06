@@ -1,8 +1,17 @@
 header {
   text-align: center;
+  @media only screen and (max-width: 680px) {
+    height: 600px;
+  }
+  @media only screen and (max-width: 450px) {
+    height: 500px;
+  }
   article {
     width: 80%;
     margin: 20px auto;
+    @media only screen and (max-width: 680px) {
+      font-size: 90%;
+    }
   }
   h1 {
     margin-bottom: 0.5%;
@@ -11,6 +20,12 @@ header {
     max-width: 500px;
     width: 100%;
     margin-top: 4%;
+    @media only screen and (max-width: 680px) {
+      width: 50%;
+    }
+    @media only screen and (max-width: 450px) {
+      display: none;
+    }
   }
   .main-nav {
     display: flex;
@@ -48,7 +63,7 @@ header {
     display: grid;
     grid-template-columns: repeat(4, auto);
     @media only screen and (max-width: 550px) {
-      grid-template-columns: repeat(1, auto);
+      grid-template-columns: repeat(2, auto);
     }
   }
   li {
@@ -71,6 +86,12 @@ header {
     grid-gap: 30px;
     img {
       width: 25%;
+      @media only screen and (max-width: 680px) {
+        width: 12%;
+      }
+    }
+    @media only screen and (max-width: 680px) {
+      grid-template-columns: repeat(1, auto);
     }
   }
 }
@@ -80,18 +101,30 @@ header {
   display: flex;
   align-content: center;
   justify-content: space-between;
+  @media only screen and (max-width: 680px) {
+    display: block;
+  }
   .left-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    @media only screen and (max-width: 680px) {
+      width: 100%;
+    }
   }
   .right-container {
     display: flex;
     align-content: center;
     flex-direction: column;
+    @media only screen and (max-width: 680px) {
+      width: 100%;
+    }
     img {
       width: 80%;
       margin-left: 20%;
+      @media only screen and (max-width: 680px) {
+        margin: 10% 0 0 10%;
+      }
     }
   }
 }
@@ -101,10 +134,16 @@ header {
   display: flex;
   align-content: center;
   justify-content: space-between;
+  @media only screen and (max-width: 680px) {
+    display: block;
+  }
   .right-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    @media only screen and (max-width: 680px) {
+      width: 100%;
+    }
   }
   .left-container {
     display: flex;
@@ -112,6 +151,10 @@ header {
     flex-direction: column;
     img {
       width: 80%;
+      @media only screen and (max-width: 680px) {
+        margin-left: 10%;
+        margin-top: 10%;
+      }
     }
   }
 }
@@ -124,6 +167,9 @@ header {
   text-align: center;
   padding: 100px 0;
   margin-top: -50px;
+  @media only screen and (max-width: 680px) {
+    background-image: none;
+  }
 }
 
 #footer {
