@@ -23,9 +23,6 @@ header {
     @media only screen and (max-width: 680px) {
       width: 50%;
     }
-    @media only screen and (max-width: 450px) {
-      display: none;
-    }
   }
   .main-nav {
     display: flex;
@@ -56,6 +53,12 @@ header {
   //* Responsive Nav Styles
   .responsive-nav {
     @media screen and (max-width: 750px) {
+      display: none;
+    }
+  }
+
+  .header-image {
+    @media only screen and (max-width: 450px) {
       display: none;
     }
   }
@@ -93,6 +96,16 @@ header li.nav-toggle {
   @media screen and (max-width: 750px) {
     display: block;
     width: 120px;
+    z-index: 3;
+  }
+  @media screen and (max-width: 680px) {
+    display: block;
+    width: 160px;
+    z-index: 3;
+  }
+  @media screen and (max-width: 450px) {
+    display: block;
+    width: 160px;
     z-index: 3;
   }
 }
