@@ -25,11 +25,16 @@
               <li>
                 <a href="index.html" class="logo"><img src="" alt="Logo"/></a>
               </li>
-              <li><a href="">link</a></li>
-              <li><a href="">link</a></li>
-              <li><a href="">link</a></li>
-              <li><a href="">link</a></li>
-              <li><a href="login.html" class="cta">Login</a></li>
+              <div id="responsive-nav" class="responsive-nav">
+                <li><a href="">link</a></li>
+                <li><a href="">link</a></li>
+                <li><a href="">link</a></li>
+                <li><a href="">link</a></li>
+                <li><a href="login.html" class="cta">Login</a></li>
+              </div>
+              <li class="nav-toggle">
+                <a href="javascript:void(0);" onclick="showNav()"><img src="images/agenda.svg" alt=""/></a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -37,7 +42,7 @@
         <article>
           <h1>Work Just Got Easier</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam facere, voluptatum iure asperiores odit, ullam accusantium magni itaque aliquam deleniti modi consequuntur velit vero aperiam earum magnam reiciendis perspiciatis impedit.</p>
-          <img src="images/content_vbqo.svg" alt="marketing image" />
+          <img class="header-image" src="images/content_vbqo.svg" alt="marketing image" />
         </article>
       </header>
       <!-- Top devices available -->
@@ -111,33 +116,35 @@
           <button class="btn draw-border">Get started</button>
         </div>
       </section>
-      <!-- Footer -->
-      <footer id="footer">
-        <div class="footer-links">
-          <div>
-            <ul>
-              <h3>Features</h3>
-              <li><a href="">link</a></li>
-              <li><a href="">link</a></li>
-              <li><a href="">link</a></li>
-            </ul>
-          </div>
-          <div>
-            <ul>
-              <h3>Company</h3>
-              <li><a href="">link</a></li>
-              <li><a href="">link</a></li>
-              <li><a href="">link</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="">
-          <p>Copyright © 2019. All rights reserved.</p>
-        </div>
-        <div class=""></div>
-      </footer>
-      <!-- End Main body Container -->
     </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="footer-links">
+        <div>
+          <ul>
+            <h3>Features</h3>
+            <li><a class="footer-link" href="">link</a></li>
+            <li><a class="footer-link" href="">link</a></li>
+            <li><a class="footer-link" href="">link</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <h3>Company</h3>
+            <li><a class="footer-link" href="">link</a></li>
+            <li><a class="footer-link" href="">link</a></li>
+            <li><a class="footer-link" href="">link</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="">
+        <p>Copyright © 2019. All rights reserved.</p>
+      </div>
+      <div class=""></div>
+    </footer>
+    <!-- End Main body Container -->
+    <script src="js/app.js"></script>
   </body>
   <!-- End Body -->
 </html>
