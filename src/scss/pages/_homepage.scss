@@ -9,7 +9,6 @@ header {
   article {
     width: 80%;
     margin: 20px auto;
-
     @media only screen and (max-width: 680px) {
       font-size: 90%;
     }
@@ -30,7 +29,7 @@ header {
     .free-button {
       line-height: 25px;
       padding: 13px 40px;
-      box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 15px 3px #b6b3f0;
       background: #6c63ff;
       border-radius: 1px;
       color: #fff;
@@ -79,7 +78,7 @@ header {
   }
 
   .header-image {
-    @media only screen and (max-width: 450px) {
+    @media only screen and (max-width: 550px) {
       display: none;
     }
   }
