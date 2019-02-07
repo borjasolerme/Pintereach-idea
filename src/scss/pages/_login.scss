@@ -1,6 +1,12 @@
 $main: #6c63ff;
 $second: #6c63ff;
 
+#login {
+  @media only screen and (max-width: 450px) {
+    height: 100px;
+  }
+}
+
 #container {
   background: #fff;
   box-sizing: border-box;
