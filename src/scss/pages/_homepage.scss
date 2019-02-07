@@ -9,6 +9,7 @@ header {
   article {
     width: 80%;
     margin: 20px auto;
+
     @media only screen and (max-width: 680px) {
       font-size: 90%;
     }
@@ -24,6 +25,24 @@ header {
       width: 50%;
     }
   }
+  .start-free-acount {
+    margin: 2%;
+    .free-button {
+      line-height: 25px;
+      padding: 13px 40px;
+      box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.2);
+      background: #6c63ff;
+      border-radius: 1px;
+      color: #fff;
+      display: inline-block;
+      cursor: pointer;
+      border: none;
+      text-decoration: none;
+    }
+    .free-button:hover {
+      background: #5b55dd;
+    }
+  }
   .main-nav {
     display: flex;
     margin-top: 10px;
@@ -37,16 +56,19 @@ header {
     a {
       color: black;
       display: block;
-      padding: 15px 30px;
+      padding: 15px 20px;
       text-decoration: none;
-      font-weight: 900;
+      font-weight: 700;
     }
     .cta {
       background: #6c63ff;
       color: white;
       box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.2);
       margin-left: 15px;
-      border-radius: 12px;
+      border-radius: 1px;
+    }
+    .cta:hover {
+      background: #5b55dd;
     }
   }
   //* Responsive Nav Styles

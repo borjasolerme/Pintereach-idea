@@ -14,69 +14,77 @@
 
   <!-- BODY -->
   <body>
-    <header>
-      <!-- Navigation -->
-      <div class="wrapper">
-        <nav>
-          <ul class="main-nav">
-            <li>
-              <a href="index.html" class="logo">Pintereach</a>
-            </li>
-            <li><a href="">link</a></li>
-            <li><a href="">link</a></li>
-            <li><a href="">link</a></li>
-            <li><a href="">link</a></li>
-            <li><a href="login.html" class="cta">Try us</a></li>
-          </ul>
-        </nav>
+    <div class="wrapper">
+      <header>
+        <!-- Navigation -->
+        <div class="">
+          <nav>
+            <ul class="main-nav">
+              <li>
+                <a href="index.html" class="logo"><u>Pintereach</u></a>
+              </li>
+              <div id="responsive-nav" class="responsive-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Features</a></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="login.html" class="cta">Try us</a></li>
+              </div>
+              <li class="nav-toggle">
+                <a href="javascript:void(0);" onclick="showNav()"><img src="images/agenda.svg" alt=""/></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- Header body -->
+      </header>
+      <div id="container">
+        <div class="tabs">
+          <div class="tab tab-link current" data-tab="tab-1">Login</div>
+          <div class="tab tab-link" data-tab="tab-2">Register</div>
+        </div>
+        <form class="tab-content current login" action="" id="tab-1">
+          <div class="form-div">
+            <div class="input-area">
+              <input class="input" type="text" placeholder="Username" />
+              <div class="input-icon fa fa-user"></div>
+            </div>
+          </div>
+          <div class="form-div">
+            <div class="input-area">
+              <input class="input" type="password" placeholder="Password" />
+              <div class="input-icon fa fa-lock"></div>
+            </div>
+          </div>
+          <div class="form-footer">
+            <button><span>Forgot Password</span><span class="fa fa-question"></span></button>
+            <button><span>Login</span><span class="fa fa-sign-in"></span></button>
+          </div>
+        </form>
+        <form class="tab-content register" action="" id="tab-2">
+          <div class="form-div">
+            <div class="input-area">
+              <input class="input" type="text" placeholder="Username" />
+              <div class="input-icon fa fa-user"></div>
+            </div>
+          </div>
+          <div class="form-div">
+            <div class="input-area">
+              <input class="input" type="email" placeholder="Email" />
+              <div class="input-icon fa fa-envelope"></div>
+            </div>
+          </div>
+          <div class="form-div">
+            <div class="input-area">
+              <input class="input" type="password" placeholder="Password" />
+              <div class="input-icon fa fa-lock"></div>
+            </div>
+          </div>
+          <div class="form-footer">
+            <button><span>Register</span><span class="fa fa-user-plus"></span></button>
+          </div>
+        </form>
       </div>
-    </header>
-    <div id="container">
-      <div class="tabs">
-        <div class="tab tab-link current" data-tab="tab-1">Login</div>
-        <div class="tab tab-link" data-tab="tab-2">Register</div>
-      </div>
-      <form class="tab-content current login" action="" id="tab-1">
-        <div class="form-div">
-          <div class="input-area">
-            <input class="input" type="text" placeholder="Username" />
-            <div class="input-icon fa fa-user"></div>
-          </div>
-        </div>
-        <div class="form-div">
-          <div class="input-area">
-            <input class="input" type="password" placeholder="Password" />
-            <div class="input-icon fa fa-lock"></div>
-          </div>
-        </div>
-        <div class="form-footer">
-          <button><span>Forgot Password</span><span class="fa fa-question"></span></button>
-          <button><span>Login</span><span class="fa fa-sign-in"></span></button>
-        </div>
-      </form>
-      <form class="tab-content register" action="" id="tab-2">
-        <div class="form-div">
-          <div class="input-area">
-            <input class="input" type="text" placeholder="Username" />
-            <div class="input-icon fa fa-user"></div>
-          </div>
-        </div>
-        <div class="form-div">
-          <div class="input-area">
-            <input class="input" type="email" placeholder="Email" />
-            <div class="input-icon fa fa-envelope"></div>
-          </div>
-        </div>
-        <div class="form-div">
-          <div class="input-area">
-            <input class="input" type="password" placeholder="Password" />
-            <div class="input-icon fa fa-lock"></div>
-          </div>
-        </div>
-        <div class="form-footer">
-          <button><span>Register</span><span class="fa fa-user-plus"></span></button>
-        </div>
-      </form>
     </div>
     <!-- Scripts -->
   </body>
