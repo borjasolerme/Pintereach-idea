@@ -34,13 +34,14 @@
     bottom: 0;
     left: 50%;
     font-size: 12px;
-    color: grey;
+    color: white;
     cursor: pointer;
     transform: translate(-50%);
-    background-color: white;
+    background-color: #6c63ff;
+    border-radius: 5px;
   }
 }
 
 .article-open {
-  height: 400px;
+  height: 500px;
 }

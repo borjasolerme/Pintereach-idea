@@ -9,6 +9,8 @@
   &::before,
   &::after {
     border: 0 solid transparent;
+    border-radius: 5px;
+
     box-sizing: border-box;
     content: "";
     pointer-events: none;
@@ -59,11 +61,13 @@
   @include btn-border-drawing(#6c63ff, #38d39f, 4px, bottom, right);
 }
 
-//=== Button styling, semi-ignore
+//=== Button styling
 .btn {
   margin-top: 20px;
   background: none;
   border: none;
+  border-radius: 5px;
+
   cursor: pointer;
   line-height: 1.5;
   font: 700 1.6rem "Roboto Slab", sans-serif;
