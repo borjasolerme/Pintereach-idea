@@ -9,7 +9,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900" rel="stylesheet" />
   </head>
 
   <!-- BODY -->
@@ -23,26 +23,29 @@
           <nav>
             <ul class="main-nav">
               <li>
-                <a href="index.html" class="logo"><img src="" alt="Logo"/></a>
+                <a href="index.html" class="logo"><u>Pintereach</u></a>
               </li>
               <div id="responsive-nav" class="responsive-nav">
-                <li><a href="">link</a></li>
-                <li><a href="">link</a></li>
-                <li><a href="">link</a></li>
-                <li><a href="">link</a></li>
-                <li><a href="login.html" class="cta">Login</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#cta-tryfree">Pricing</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="login.html" class="cta">Try us</a></li>
               </div>
               <li class="nav-toggle">
-                <a href="javascript:void(0);" onclick="showNav()"><img src="images/agenda.svg" alt=""/></a>
+                <a href="javascript:void(0);" onclick="showNav()"><img src="images/menu.svg" alt=""/></a>
               </li>
             </ul>
           </nav>
         </div>
         <!-- Header top body -->
         <article>
-          <h1>Work Just Got Easier</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam facere, voluptatum iure asperiores odit, ullam accusantium magni itaque aliquam deleniti modi consequuntur velit vero aperiam earum magnam reiciendis perspiciatis impedit.</p>
-          <img class="header-image" src="images/content_vbqo.svg" alt="marketing image" />
+          <h1>Organize all your <em class="highlighted highlighted-purple">knowledge</em></h1>
+          <p>Save everything you watch and read online. Organize it, read it later</p>
+          <div class="start-free-acount">
+            <a href="login.html" class="free-button">Start free!</a>
+          </div>
+          <img class="header-image" src="images/a_day_at_the_park_owg1.svg" alt="marketing image" />
         </article>
       </header>
       <!-- Top devices available -->
@@ -50,10 +53,22 @@
         <div>
           <h3>Available in:</h3>
           <ul>
-            <li><i class="fa fa-apple" aria-hidden="true"></i></li>
-            <li><i class="fa fa-android" aria-hidden="true"></i></li>
-            <li><i class="fa fa-desktop" aria-hidden="true"></i></li>
-            <li><i class="fa fa-chrome" aria-hidden="true"></i></li>
+            <li>
+              <i class="fa fa-apple" aria-hidden="true"></i>
+              <p>Apple</p>
+            </li>
+            <li>
+              <i class="fa fa-android" aria-hidden="true"></i>
+              <p>Android</p>
+            </li>
+            <li>
+              <i class="fa fa-desktop" aria-hidden="true"></i>
+              <p>Mac & Windows</p>
+            </li>
+            <li>
+              <i class="fa fa-chrome" aria-hidden="true"></i>
+              <p>Web browsers</p>
+            </li>
           </ul>
         </div>
       </section>
@@ -62,7 +77,7 @@
         <div class="left-container">
           <div class="left-text">
             <h2>Save everything</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, nisi?</p>
+            <p>Medium posts, news articles, tweets, youtube videos... Save all the knowledge in one platform and see it later.</p>
             <button class="btn draw-border">Learn More</button>
           </div>
         </div>
@@ -73,23 +88,23 @@
         </div>
       </section>
       <!-- Lower - Middle content body -->
-      <section class="features">
-        <h2>Incredible features</h2>
+      <section class="features" id="features">
+        <h2>Better than similar tools</h2>
         <div class="cards">
           <div class="feature-card">
             <img src="images/agenda.svg" alt="feauture1" />
-            <h3>Feauture 1</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h3>Organize</h3>
+            <p>Create categories with endless possibilities.</p>
           </div>
           <div class="feature-card">
             <img src="images/grid.svg" alt="feature2" />
-            <h3>Feauture 2</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h3>Boards</h3>
+            <p>Create boards and save everything. Share it with other people and work in teams.</p>
           </div>
           <div class="feature-card">
             <img src="images/transfer.svg" alt="feature3 " />
-            <h3>Feauture 3</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h3>Everywhere</h3>
+            <p>Work and read from anywhere and in any device.</p>
           </div>
         </div>
       </section>
@@ -102,21 +117,23 @@
         </div>
         <div class="right-container">
           <div class="right-text">
-            <h2>Share with anyone</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, nisi?</p>
+            <h2>Spread the knowledge</h2>
+            <p>It has never been easier to share lists of resources, create a board, a share it!</p>
             <button class="btn draw-border">Learn More</button>
           </div>
         </div>
       </section>
-      <!-- Call to action -->
-      <section id="cta-tryfree">
-        <div>
-          <h2>Try pintereach - It's Free</h2>
-          <p>Save knowledge, read it latter</p>
-          <button class="btn draw-border">Get started</button>
-        </div>
-      </section>
     </div>
+
+    <!-- Call to action -->
+    <section id="cta-tryfree">
+      <div>
+        <h2>Try pintereach - <u>It's Free</u></h2>
+        <p class="cta-price">5€ per month</p>
+        <p class="cta-offer">Free the first sixth months</p>
+        <button class="btn draw-border">Get started</button>
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer id="footer">
@@ -124,17 +141,17 @@
         <div>
           <ul>
             <h3>Features</h3>
-            <li><a class="footer-link" href="">link</a></li>
-            <li><a class="footer-link" href="">link</a></li>
-            <li><a class="footer-link" href="">link</a></li>
+            <li><a class="footer-link" href="#features">Features</a></li>
+            <li><a class="footer-link" href="#cta-tryfree">Pricing</a></li>
+            <li><a class="footer-link" href="#">Download APP</a></li>
           </ul>
         </div>
         <div>
           <ul>
             <h3>Company</h3>
-            <li><a class="footer-link" href="">link</a></li>
-            <li><a class="footer-link" href="">link</a></li>
-            <li><a class="footer-link" href="">link</a></li>
+            <li><a class="footer-link" href="#">About us</a></li>
+            <li><a class="footer-link" href="#">Jobs</a></li>
+            <li><a class="footer-link" href="#">Privacy</a></li>
           </ul>
         </div>
       </div>
@@ -144,6 +161,7 @@
       <div class=""></div>
     </footer>
     <!-- End Main body Container -->
+    <script src="js/scrollreveal.min.js"></script>
     <script src="js/app.js"></script>
   </body>
   <!-- End Body -->

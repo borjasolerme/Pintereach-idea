@@ -24,6 +24,27 @@ header {
       width: 50%;
     }
   }
+  .start-free-acount {
+    margin-top: 5%;
+    .free-button {
+      line-height: 25px;
+      padding: 13px 40px;
+      box-shadow: 0 0 15px 3px #b6b3f0;
+      background: #6c63ff;
+      border-radius: 5px;
+      color: #fff;
+      display: inline-block;
+      cursor: pointer;
+      border: none;
+      text-decoration: none;
+      @media only screen and (max-width: 550px) {
+        margin-top: 15%;
+      }
+    }
+    .free-button:hover {
+      background: #5b55dd;
+    }
+  }
   .main-nav {
     display: flex;
     margin-top: 10px;
@@ -37,17 +58,19 @@ header {
     a {
       color: black;
       display: block;
-      padding: 15px 30px;
+      padding: 15px 20px;
       text-decoration: none;
-      font-weight: 900;
-      text-transform: uppercase;
+      font-weight: 700;
     }
     .cta {
       background: #6c63ff;
       color: white;
       box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.2);
       margin-left: 15px;
-      border-radius: 12px;
+      border-radius: 5px;
+    }
+    .cta:hover {
+      background: #5b55dd;
     }
   }
   //* Responsive Nav Styles
@@ -58,7 +81,7 @@ header {
   }
 
   .header-image {
-    @media only screen and (max-width: 450px) {
+    @media only screen and (max-width: 550px) {
       display: none;
     }
   }
@@ -95,24 +118,27 @@ header li.nav-toggle {
   display: none;
   @media screen and (max-width: 750px) {
     display: block;
-    width: 120px;
+    width: 100px;
     z-index: 3;
   }
   @media screen and (max-width: 680px) {
     display: block;
-    width: 160px;
+    width: 140px;
     z-index: 3;
   }
   @media screen and (max-width: 450px) {
     display: block;
-    width: 160px;
+    width: 140px;
     z-index: 3;
   }
 }
 
 .devices {
   text-align: center;
-  padding: 20px 0;
+  padding-top: 5%;
+  @media only screen and (max-width: 550px) {
+    padding-top: 25%;
+  }
   ul {
     margin: 0;
     padding-top: 20px;
@@ -121,10 +147,12 @@ header li.nav-toggle {
     grid-template-columns: repeat(4, auto);
     @media only screen and (max-width: 550px) {
       grid-template-columns: repeat(2, auto);
+      padding-top: 2px;
     }
   }
   li {
     list-style: none;
+    margin: 5%;
     i {
       color: #afb4cc;
       font-size: 6rem;
@@ -154,7 +182,7 @@ header li.nav-toggle {
 }
 
 .marketing-content_top {
-  padding: 12% 0;
+  padding: 8% 0;
   display: flex;
   align-content: center;
   justify-content: space-between;
@@ -217,16 +245,38 @@ header li.nav-toggle {
 }
 
 #cta-tryfree {
-  background-image: url(../images/a_day_at_the_park_owg1.svg);
-  background-position: center 200px;
+  background-image: url(../images/blob-shape.svg);
+  background-position: center -665px;
   background-repeat: no-repeat;
-  background-size: 50%;
+  background-size: 120%;
   text-align: center;
   padding: 100px 0;
   margin-top: -50px;
-  @media only screen and (max-width: 680px) {
-    background-image: none;
+  @media only screen and (max-width: 1150px) {
+    background-position: center -465px;
   }
+  @media only screen and (max-width: 915px) {
+    background-position: center -300px;
+  }
+  @media only screen and (max-width: 740px) {
+    background-position: center -165px;
+  }
+  @media only screen and (max-width: 600px) {
+    background-position: center -70px;
+  }
+  @media only screen and (max-width: 500px) {
+    background-position: center 50px;
+  }
+}
+
+.cta-price {
+  text-decoration: line-through;
+  color: #6c63ff;
+}
+.cta-offer {
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: #283544;
 }
 
 #footer {

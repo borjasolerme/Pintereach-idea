@@ -7,3 +7,10 @@ function showNav() {
     opennav.className = "responsive-nav";
   }
 }
+
+// Scroll Reveal
+
+ScrollReveal().reveal(".header-image");
+ScrollReveal().reveal(".right-image_marketing");
+ScrollReveal().reveal(".feature-card");
+ScrollReveal().reveal(".left-image_marketing");
